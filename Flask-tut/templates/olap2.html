@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OLAP QUERY</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border: 1px solid #ddd; 
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        div{
+            color: rebeccapurple;
+        }
+        #PS{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>OLAP Query-2</h1>
+    <div>Query to get the details of all the customers in ranking of orders placed(Customer
+        corresponding to highest orders placed comes first)
+    </div><br><br>
+
+    <table>
+        <tr>
+            <th>CustomerID</th>
+            <th>First Name</th>
+            <th>Total Orders</th>
+        </tr>
+        {% for col in olap2 %}
+        <tr>
+            <td>{{ col[0] }}</td>
+            <td>{{ col[1] }}</td>
+            <td>{{ col[2] }}</td>
+
+
+        </tr>
+        {% endfor %}
+    </table><br><br>
+    <div id="PS">*Drill down OLAP query, as it drills down on the customer dimension by ranking the customers based on the number of orders they have placed. Identify which customers are the most valuable or active in terms of placing orders.
+    </div>
+</body>
+</html>

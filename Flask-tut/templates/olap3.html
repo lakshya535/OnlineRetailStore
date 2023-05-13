@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OLAP QUERY</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border: 1px solid #ddd; 
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        div{
+            color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <h1>OLAP Query-3</h1>
+    <div>
+        Query to get the number of products in each product category (Slicing OLAP query)
+
+    </div><br><br>
+
+    <table>
+        <tr>
+            <th>Category Name</th>
+            <th>Total Products in Category</th>
+        </tr>
+        {% for col in olap3 %}
+        <tr>
+            <td>{{ col[0] }}</td>
+            <td>{{ col[1] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

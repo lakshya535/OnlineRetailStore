@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Embedded SQL QUERY</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border: 1px solid #ddd; 
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        div{
+            color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <h1>Embedded Query-2</h1>
+    <div>Query to get the details of all the customers who have spent more than a specific amount of money.(For giving extra discount to the customer)
+    </div>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <th>CustomerID</th>
+            <th>First Name</th>
+            <th>Total Spent</th>
+        </tr>
+        {% for col in embedded2 %}
+        <tr>
+            <td>{{ col[0] }}</td>
+            <td>{{ col[1] }}</td>
+            <td>{{ col[2] }}</td>
+           
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

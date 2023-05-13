@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  margin:20px 30px;
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 20px auto;
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+}
+
+#btn-products{
+  display: block;
+  margin: 20px auto;
+}
+#btn-cart{
+  display: block;
+  margin: 20px auto;
+}
+#btn-addCart{
+  display: block;
+  margin: 20px auto;
+}
+#btn-buyCart{
+  display: block;
+  margin: 20px auto;
+}
+#btn-login{
+  display: block;
+  margin: 20px auto;
+}
+#btn-register{
+  display: block;
+  margin: 20px auto;
+}
+

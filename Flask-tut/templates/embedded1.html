@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Embedded SQL QUERY</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border: 1px solid #ddd; 
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        div{
+            color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <h1>Embedded Query-1</h1>
+    <div>Query to get the specific details of the orders that were placed within a specific date range
+        (Between '2022-01-01' AND '2022-03-01')
+    </div>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <th>OrderID</th>
+            <th>Date of Transaction</th>
+            <th>Total Cost</th>
+            <th>First Name</th>
+        </tr>
+        {% for col in embedded1 %}
+        <tr>
+            <td>{{ col[0] }}</td>
+            <td>{{ col[1] }}</td>
+            <td>{{ col[2] }}</td>
+            <td>{{ col[3] }}</td>
+
+
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

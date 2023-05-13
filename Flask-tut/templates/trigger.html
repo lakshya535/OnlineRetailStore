@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trigger Sequence</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border: 1px solid #ddd; 
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        div{
+            color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trigger Sequence</h1>
+    <div>Cart Item Before insertion of {{ result1.customerID }} cart_items    
+    </div> 
+    <br>
+    <br>
+    <table>
+        <tr>
+            <th>CustomerID</th>
+            <th>ProductID</th>
+            <th>Quantity</th>
+            <th>Cost</th>
+        </tr>
+        {% for col in result1 %}
+        <tr>
+            <td>{{ col[0] }}</td>
+            <td>{{ col[1] }}</td>
+            <td>{{ col[2] }}</td>
+            <td>{{ col[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table><br><br>
+    <div>Cart Before insertion of {{ result1.customerID }} cart_items      
+    </div>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <th>CustomerID</th>
+            <th>Discount</th>
+            <th>Total Cost</th>
+        </tr>
+        {% for col in result2 %}
+        <tr>
+            <td>{{ col[0] }}</td>
+            <td>{{ col[1] }}</td>
+            <td>{{ col[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table><br><br>
+    <div>Cart Item After insertion of {{ result1.customerID }} cart_items    
+    </div>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <th>CustomerID</th>
+            <th>ProductID</th>
+            <th>Quantity</th>
+            <th>Cost</th>
+        </tr>
+        {% for col in result5 %}
+        <tr>
+            <td>{{ col[0] }}</td>
+            <td>{{ col[1] }}</td>
+            <td>{{ col[2] }}</td>
+            <td>{{ col[3] }}</td>
+        </tr>
+        {% endfor %}
+    </table><br><br>
+    <div>Cart After insertion of {{ result1.customerID }} cart_items with discount applied if total_cost>20000    
+    </div>
+    <br>
+    <br>
+    <table>
+        <tr>
+            <th>CustomerID</th>
+            <th>Discount</th>
+            <th>Total Cost</th>
+        </tr>
+        {% for col in result4 %}
+        <tr>
+            <td>{{ col[0] }}</td>
+            <td>{{ col[1] }}</td>
+            <td>{{ col[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table><br><br>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to My Website</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+	<header>
+		<h1>Welcome {{ session['first_name'] }}!</h1>
+		<nav>
+			<ul>
+                <button id="btn-products" class="btn" onclick="location.href='/products'">View Products</button>
+                <button id="btn-cart" class="btn" onclick="location.href='/cart'">View Cart</button>
+                <button id="btn-addCart" class="btn" onclick="location.href='/add_cart'">Add to cart</button>
+                <button id="btn-buyCart" class="btn" onclick="location.href='/buy_cart'">Buy Cart</button>
+
+			</ul>
+		</nav>
+	</header>
+</body>
+</html>
+
