@@ -12,7 +12,7 @@ Link for documentation: https://drive.google.com/file/d/1XJ3XtQDoqyzwnXkgJpL8SrO
 
 Link for User Guide: https://drive.google.com/file/d/1IPJfcNWsy31Oo29uyB4yUhGYpEmb8l0K/view?usp=sharing
 
-##Some Features:
+# Some Features:
 1)Fully functional cart system, discount on cart
 
 2)Over 300 products in 15 diverse categories
