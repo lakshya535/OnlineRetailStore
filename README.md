@@ -11,3 +11,20 @@ Link for documentation: https://drive.google.com/file/d/1XJ3XtQDoqyzwnXkgJpL8SrO
 
 
 Link for User Guide: https://drive.google.com/file/d/1IPJfcNWsy31Oo29uyB4yUhGYpEmb8l0K/view?usp=sharing
+
+##Some Features:
+1)Fully functional cart system, discount on cart
+
+2)Over 300 products in 15 diverse categories
+
+3)Gives seller and customer a separate dashboard to use the app
+
+4)Sellers can add,update and remove any product
+
+5)A product can belong to multiple product categories
+
+6)Interface where delivery person can register themselves
+
+7)Triggers implemented in the database for automatic discount application on cart according to the shopping price
+
+
