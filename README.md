@@ -27,4 +27,7 @@ Link for User Guide: https://drive.google.com/file/d/1IPJfcNWsy31Oo29uyB4yUhGYpE
 
 7)Triggers implemented in the database for automatic discount application on cart according to the shopping price
 
+8)Admin can also review statistics regarding the website. For example: The top selling products currently, customers who have not yet bought anything from the website,etc.
+
+
 
